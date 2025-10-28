@@ -1,0 +1,50 @@
+body{
+    background-color: beige;
+    margin-top: auto;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    color: #004aad;
+}
+
+marquee{
+    color: black;
+    scroll-behavior: initial;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    background-color: black;
+}
+
+th,td{
+    padding: 12px 15px;
+}
+
+th {
+    background-color: black;
+}
+
+tbody{
+    background-color: white;
+}
+
+.course-code, .course-title{
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24pt;
+    text-align: left;
+}
+
+.lecturer-name{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
