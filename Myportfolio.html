@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominion's Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            background: #f8f4ee;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ---------- HEADER ---------- */
+        header{
+            background: #222;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1{
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+        header p{
+            color: #ddd;
+            margin-top: 10px;
+        }
+
+        /* ---------- NAVBAR ---------- */
+        nav{
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a{
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #444;
+        }
+        nav a:hover{
+            color: #d35400;
+        }
+
+        /* ---------- SECTIONS ---------- */
+        section{
+            padding: 60px 10%;
+        }
+        section h2{
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #222;
+        }
+
+        /* ---------- ABOUT SECTION ---------- */
+        #about-container{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #about-container img{
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        #about-container p{
+            max-width: 500px;
+            font-size: 1.1rem;
+        }
+
+        /* ---------- ACTIVITIES ---------- */
+        ul li{
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        /* ---------- PROJECTS ---------- */
+        .projects{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .project{
+            background: white;
+            padding: 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .project:hover{
+            transform: translateY(-5px);
+        }
+        .project img{
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        /* ---------- CONTACT ---------- */
+        .contact-info{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .contact-info p{
+            font-size: 1.1rem;
+        }
+
+        footer{
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a{
+            color: #d35400;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>ONUH DOMINION</h1>
+        <p>Computer Engineering Student | Front-End Developer | Creative Enthusiast</p>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div id="about-container">
+            <img src="images/dominion.jpg" alt="Portrait">
+
+            <p>
+                Hello! I'm <strong>Dominion Onuh</strong>, a 400 Level Computer Engineering Student (Matric No: 
+                <strong>22CJ031134</strong>) at Covenant University.  
+                I have a strong passion for front-end development, design, and creative digital work.  
+                I enjoy learning new technologies, improving my craft, and working on impactful projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities">
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>Photography</li>
+            <li>Swimming</li>
+            <li>Picture Editing</li>
+            <li>Graphic Design</li>
+            <li>Bag Making</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="project">
+                <img src="images/vimeo.png" alt="Vimeo Project">
+                <p><strong>Vimeo Website</strong></p>
+            </div>
+
+            <div class="project">
+                <img src="images/bootstrap.png" alt="Bootstrap Cards">
+                <p><strong>Bootstrap Cards</strong></p>
+            </div>
+
+            <div class="project">
+                <img src="images/div.png" alt="Div Sections">
+                <p><strong>Different Div Sections</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-info">
+            <p><strong>Address:</strong> Deborah Hall, Covenant University</p>
+            <p><strong>Email:</strong> <a href="mailto:donuh.2201761@stu.cu.edu.ng">donuh.2201761@stu.cu.edu.ng</a></p>
+            <p><strong>Phone:</strong> 09041004426</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Dominion’s Portfolio | Designed by <a href="#">Dominion</a>
+    </footer>
+
+</body>
+</html>

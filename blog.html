@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother & Child Blog</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            background-color: #fdf7f3;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header{
+            background: #ffb6c1;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        header p{
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* NAVBAR */
+        nav{
+            background: #fff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a{
+            margin: 0 20px;
+            text-decoration: none;
+            color: #444;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        nav a:hover{
+            color: #ff6f91;
+        }
+
+        /* LAYOUT */
+        .container{
+            display: flex;
+            gap: 40px;
+            padding: 50px 10%;
+            flex-wrap: wrap;
+        }
+
+        /* BLOG POSTS */
+        .posts{
+            flex: 2;
+        }
+
+        .post{
+            background: white;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 7px rgba(0,0,0,0.1);
+        }
+
+        .post img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .post h2{
+            margin-top: 15px;
+            font-size: 1.8rem;
+            color: #ff6f91;
+        }
+
+        .post p{
+            margin-top: 10px;
+        }
+
+        .read-more{
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #ff6f91;
+            font-weight: 600;
+        }
+
+        /* SIDEBAR */
+        .sidebar{
+            flex: 1;
+        }
+
+        .sidebar-box{
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 7px rgba(0,0,0,0.1);
+        }
+
+        .sidebar-box h3{
+            margin-bottom: 15px;
+            color: #ff6f91;
+        }
+
+        .sidebar-box ul li{
+            margin: 10px 0;
+        }
+
+        /* FOOTER */
+        footer{
+            background: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Mother & Child Blog</h1>
+        <p>Sharing love, lessons, and motherhood moments</p>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#posts">Blog Posts</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- BLOG POSTS -->
+        <div class="posts" id="posts">
+
+            <!-- POST 1 -->
+            <div class="post">
+                <img src="https://images.pexels.com/photos/3846045/pexels-photo-3846045.jpeg" alt="Mother and baby">
+                <h2>5 Things I Learned in My First Month of Motherhood</h2>
+                <p>
+                    Becoming a mother for the first time is magical, overwhelming, and life-changing.  
+                    From sleepless nights to priceless cuddles, here are the five most important things motherhood has taught me...
+                </p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+
+            <!-- POST 2 -->
+            <div class="post">
+                <img src="https://images.pexels.com/photos/265987/pexels-photo-265987.jpeg" alt="Mother playing with child">
+                <h2>How to Build a Strong Bond with Your Child</h2>
+                <p>
+                    A strong mother-child bond is built through love, communication, and presence.  
+                    Here are simple everyday actions that strengthen your connection with your little one.
+                </p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+
+            <!-- POST 3 -->
+            <div class="post">
+                <img src="https://images.pexels.com/photos/208509/pexels-photo-208509.jpeg" alt="Mother reading to child">
+                <h2>Why Reading to Your Child Matters</h2>
+                <p>
+                    Reading to your child boosts imagination, vocabulary, and emotional development.  
+                    Even 10 minutes a day can make a huge impact.
+                </p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+
+            <div class="sidebar-box">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Motherhood Tips</li>
+                    <li>Baby Care</li>
+                    <li>Parenting Advice</li>
+                    <li>Child Development</li>
+                    <li>Family Activities</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>The Importance of Skin-to-Skin Contact</li>
+                    <li>Meal Ideas for Toddlers</li>
+                    <li>How to Manage Mom Stress</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        © 2025 Mother & Child Blog | Designed by Dominion
+    </footer>
+
+</body>
+</html>
